@@ -10,15 +10,24 @@ body {
 .top-container {
   background-color: #FFF8F3;
   position: relative;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+.navbar {
+  margin-right: auto;
+  color: black;
 }
 
 /* We always have to make a position Relative to make a other position as Absolute; otherwise; the other position will be relative to the
  parent one which in this case the "Body" element if here we have not made the top-container as relative */
 .middle-container {
-  margin: 50px auto;
+  margin: 50px 2%;
   padding-bottom: 2rem;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
 }
 
 .my-image {
@@ -28,12 +37,18 @@ body {
 
 h1 {
   font-family: 'Merienda One', cursive;
-  font-size: 2.65rem;
+  font-size: 3rem;
   color: #66BFBF;
 }
 
 h3 {
   color: #66BFBF;
+}
+
+h2{
+  font-family: 'Sacramento', cursive;
+  font-size: 2.20rem;
+  color: black;
 }
 
 p {
@@ -42,11 +57,7 @@ p {
 /** used for the spacing between the lines **/
 }
 
-.bottom-container {
-  background-color: #66BFBF;
-  padding-top: 40px;
-  padding-bottom: 10px;
-}
+
 
 .name {
   font-family: 'Merienda One', cursive;
@@ -54,7 +65,7 @@ p {
 }
 
 .intro {
-  width: 30%;
+  width: 27%;
   /* i.e 30% of the parent element in which it is contained */
   margin: auto;
 }
@@ -73,24 +84,45 @@ p {
 
 .skill-row {
   width: 50%;
-  margin: 100px auto 100px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: 50px auto 50px auto;
+  padding-top: 10px;
+  padding-bottom: 15px;
   line-height: 2;
-  text-align: left;
 }
 
-.comp-img {
-  width: 35%;
+.skill-row1 {
+  width: 50%;
+  margin: 50px auto 50px auto;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  line-height: 2;
+}
+
+.front-img {
+  width: 20%;
   float: left;
   margin-right: 20px;
   border-radius: 100%;
 }
 
-.chill-img {
-  width: 35%;
+.backend-img {
+  width: 20%;
   float: right;
   margin-left: 20px;
+  border-radius: 100%;
+}
+
+.container{
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn1{
+  margin: 25px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
 }
 
 hr {
@@ -100,7 +132,7 @@ hr {
   width: 5%;
   height: 10%;
   color: grey;
-  margin: 5% auto 5% auto;
+  margin: 3% auto 3% auto;
   /* here we have placed the auto because the default settings can be aplied to here as applied in
 body to keep the text-aligh as center */
 }
@@ -134,18 +166,23 @@ body to keep the text-aligh as center */
 
 .contact-me{
   width: 40%;
-  margin: 40px auto 60px;
+  margin: 20px auto 20px auto;
 }
 
+.tabl {
+  text-align: left;
+  padding: 2%;
+  margin: 2% auto 2% auto;
+}
 
 .btn-in{
   padding: 2rem auto;
 }
 
 a{
-  color: #AEFEFF;
+  color: #05595B;
   font-family: 'Montserrat', sans-serif;
-  margin: 10px 20px;
+  margin: 20px 10px;
   text-decoration: none;
 }
 
@@ -153,7 +190,45 @@ a:hover {
   color: #EAF6F6;
 }
 
+.column {
+  float: left;
+  width: 1%;
+  padding: 5px;
+  width: 2%;
+}
+
+.course {
+  width: 35%;
+  height: 100%;
+  border-radius: 20%;
+  padding: 2%;
+}
+
+.row{
+  width: 10%;
+}
+
+img.style {
+  width: 10%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a.nav-link {
+  color: black;
+}
+
+.imgs {
+  border-radius: 100%;
+  height: 3.5%;
+  width: 3%;
+}
+
 .footer-link{
-  padding: 2rem 1.5rem;
-  margin-bottom: 1rem;
+  margin: auto;
 }

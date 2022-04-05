@@ -7,55 +7,94 @@
     <link rel="icon" href="favicon (5).ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Merriweather:wght@300&family=Montserrat:wght@200&family=Sacramento&display=swap" rel="stylesheet">
+
 
 <!-- this link is used because it adds the launguage to the cutomer computer if not added -->
   </head>
   <body>
-    <div class="top-container">
-      <img class="top-cloud" src="Images/cloud.png" alt="">
-      <h1><em>I'm <span class="name">Abhishek Singh</span></em></h1>
-      <p>A <u>Web Developer</u></p>
-      <img class="bottom-cloud" src="Images/cloud.png" alt="">
-      <img src="Images/mountain.png" alt="">
-    </div>
+
+      <div id="top-c" class="top-container">
+
+       <h1><em>Hello! I'm <span class="name">Abhishek Singh</span></em></h1>
+      <!-- SPAN is used so that it does't block the other elements which are coming in line to it!  -->
+       <p><em>A </em><u>Web Developer</u></p>
+       <img class="bottom-cloud" src="Images/cloud.png" alt="At your left!">
+       <img src="Images/mountain.png" alt="">
+      </div>
     <div class="middle-container">
       <div class="profile">
         <img class= "my-image" src="Images/man.png" alt="">
-        <h2>Hello.</h2>
-        <p class="intro">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+        <h2>Hello !</h2>
+        <p class="intro">I will be looking forward to catch up with you.</p>
       </div>
       <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
+      <div id= "skil" class="skills">
+        <h2>My Skills</h2>
         <div class="skill-row">
-          <img class="comp-img" src="Images/computer.png" alt="">
-          <h3>Lorem & Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+          <img class="front-img" src="Images/jhep-coursera-course4.png" alt="">
+          <h3>Front-end Development</h3>
+          <p>HTML, CSS, JavaScript</p>
         </div>
         <div class="skill-row">
-          <img class="chill-img" src="Images/chillies.png" alt="">
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+          <img class="backend-img" src="Images/images.jpg" alt="">
+          <h3>Back-end Development</h3>
+          <p>Node.js, Express.js, SQL, MongoDB</p>
         </div>
       </div>
       <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-        <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      </div>
-      <div class="btn-in">
-        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+      <div class="container">
+        <h2>Courses & Certificates</h2>
+    <!-- Here selected the Row so that data can be entered into it -->
+
+          <tr>
+            <td><a  href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank"><img src="Images/course1.png" alt="" class="course"  title="LinkedIn"></a></td>
+            <td><a  href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank"><img src="Images/image.png" alt="" class="course"  title="LinkedIn"></a></td>
+          </tr>
+        </div>
       </div>
     </div>
 
+      <hr>
+      <div class="contact-me">
+        <h2>My Projects</h2>
+        <table class="tabl" border="2">
+          <thead>
+          <tr>
+            <th>Project</th>
+            <th>TechnoUsed</th>
+          </tr>
+          <tr>
+            <td>Dice Challengge</td>
+            <td>HTML, CSS, JavaScript</td>
+          </tr>
+          <tr>
+            <td><a href="www.google.com">Tindog</td></a>
+            <td>HTML, CSS, JavaScript, Bootstrap</td>
+          </tr>
+          <tr><td><a href="www.google.com">Simon Game</td></a>
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/">Twitter</a>
-      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-      <p>© Abhishek Singh.</p>
+            <td>HTML, CSS, JavaScript, Bootstrap, JQuery</td>
+          </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="btn-in">
+        <a class="btn" href="mailto:abk90133@gmail.com">CONTACT ME</a>
+      </div>
+
+
+    <div id="socia" class="bottom-container">
+      <h2>Social Handles</h2>-
+      <a href="https://www.linkedin.com/in/abhishek-singh-154b8315a/" target="_blank">
+        <!-- Title tag should always be added to the "anchor tag" not to the Image tag. -->
+      <img src="Images/linkedin.png" alt="" class="footer-link imgs"  title="LinkedIn">
+      </a>
+      <a href="https://github.com/abk90133" target="_blank">
+        <img src="Images/github.png" class="footer-link imgs" title="Github">
+      </a>
+      <p> Abhishek Singh</p>
     </div>
 
   </body>
