@@ -187,7 +187,8 @@ a{
 }
 
 a:hover {
-  color: #EAF6F6;
+  color: #purple;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .column {
